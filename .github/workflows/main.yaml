@@ -28,7 +28,9 @@ jobs:
         run: terraform init
 
       - name: Terraform Plan
+        path: ../ec2_module
         run: terraform plan
 
       - name: Terraform Apply - Auto-Approve
+        path: ../ec2_module
         run: terraform apply -auto-approve
