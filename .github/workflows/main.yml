@@ -1,0 +1,36 @@
+name: Terraform Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+env:
+    TF_VAR_instance_name: ec2_group
+    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    # runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+        with:
+          terraform_version: 1.1.0
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
+       
+
+
