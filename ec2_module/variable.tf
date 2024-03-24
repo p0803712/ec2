@@ -10,7 +10,7 @@ type = string
 }
 variable "instance_type" {
   type = string
-  default= "t2.small"
+  default= "t3.micro"
 }
 variable "region" {
   type = string
