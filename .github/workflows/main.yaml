@@ -29,8 +29,8 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
-        working-directory: ../ec2_module
+        working-directory: cd ec2_module
 
       - name: Terraform Apply - Auto-Approve
         run: terraform apply -auto-approve
-        working-directory: ../ec2_module
+        working-directory: cd ec2_module
