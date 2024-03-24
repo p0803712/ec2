@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       instance_name:
-        description: 'Name of the AWS S3 bucket to delete'
+        description: 'Name of the ec2 instance to delete'
         required: true
 
 env:
