@@ -1,5 +1,5 @@
 module "ec2_instance" {
-  source            = "../ec2resource"
+  source            = "../ec2_resource"
   ami_id            = var.ami_id
   region            = var.region
   instance_type     = var.instance_type
