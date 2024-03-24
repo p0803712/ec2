@@ -2,4 +2,4 @@
 .terraform.tfstate
 .terraform
 ./s3module/terraform.tfstate
-.providers.tf
+.ec2_module/.terraform/providers/registry.terraform.io/hashicorp/aws/5.42.0/windows_amd64/terraform-provider-aws_v5.42.0_x5.exe
