@@ -14,4 +14,5 @@ module "ec2_instance" {
   start_date        = var.start_date
   end_date          = var.end_date
   key_name          = var.key_name
+  availability_zone = var.availability_zone
 }      
