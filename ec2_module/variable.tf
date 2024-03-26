@@ -60,7 +60,7 @@ variable "end_date" {
 }
  
 
- variable "availability_zone" {
-  type    = string
-   # Default availability zone (you can change this value)
-}
+#  variable "availability_zone" {
+#   type    = string
+#    # Default availability zone (you can change this value)
+# }
