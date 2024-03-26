@@ -10,5 +10,5 @@ client                = "CEQ-University Internal"
 department            = "Software trainee department"
 start_date            = "20-feb-2024"
 end_date              = "28-feb-2024"
-
+availability_zone     =  "ap-south-1a"
  
