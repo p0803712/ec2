@@ -61,3 +61,7 @@ variable "end_date" {
   description = "End date of the project"
 }
  
+ variable "availability_zone" {
+  type    = string
+
+}
