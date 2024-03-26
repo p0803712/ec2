@@ -1,4 +1,4 @@
-ami_id                ="ami-02d0a1cbe2c3e5ae4"
+ami_id                ="ami-05295b6e6c790593e"
 subnet_id             = "subnet-0142df63ad289aa8b"
 region                = "ap-south-1"
 key_name              = "tkkey11"
